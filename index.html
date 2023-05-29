@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div id="tudo">
+        <img src="#" alt="pokemon" class="pokemon_gif">
+
+        <h1 class="pokemon-data">
+            <span class="pokemon-number"></span> - 
+            <span class="pokemon-name"></span>
+        </h1>
+
+        <form id="formulario">
+            <input type="search" name="" id="input-search" placeholder="Name or Number" required autocomplete="off">
+            <button class="botoes" id="botao-search" onclick="audio.play()">Search</button>
+        </form>
+
+        <button class="botoes" id="vermais" onclick="viewMore(); audio.play()"> View more...</button>
+
+        <div class="botoes-div">
+            <button class="botoes" id="botao-anterior" onclick="audio.play()">&lt; Prev</button>
+            <button class="botoes" id="botao-proximo" onclick="audio.play()">Next &gt; </button>
+        </div>
+
+        <img src="imagens/pokedex.png" alt="pokedex" id="pokedex">
+    </div>
+
+    <dialog onclick="audio.play()">
+        <button>Close</button>
+
+        <main>
+            <div id="tudo_dialog">
+            
+                <div id="img_com_abilities">
+                    <div id="div_img">
+                        <img src="#" alt="pokemon" class="pokemon-img-2">
+                    </div>
+                    <div id="div_abilities">
+                        <h1>Abilities:</h1>
+                        <span class="pokemon-abilities-1">First ability</span>
+                        <span class="pokemon-abilities-2">Second ability</span>
+                    </div>
+                </div>
+                <div id="div_stats">
+                    <h1>Stats:</h1>
+                    <div class="pokemon-stat">
+                        <span class="pokemon-stat-name">HP</span>
+                        <span class="pokemon-stat-value pokemon-stats-1">-</span>
+                      </div>
+                      <div class="pokemon-stat">
+                        <span class="pokemon-stat-name">Attack</span>
+                        <span class="pokemon-stat-value pokemon-stats-2">-</span>
+                      </div>
+                      <div class="pokemon-stat">
+                        <span class="pokemon-stat-name">Defense</span>
+                        <span class="pokemon-stat-value pokemon-stats-3">-</span>
+                      </div>
+                      <div class="pokemon-stat">
+                        <span class="pokemon-stat-name">Special Attack</span>
+                        <span class="pokemon-stat-value pokemon-stats-4">-</span>
+                      </div>
+                      <div class="pokemon-stat">
+                        <span class="pokemon-stat-name">Special Defense</span>
+                        <span class="pokemon-stat-value pokemon-stats-5">-</span>
+                      </div>
+                      <div class="pokemon-stat">
+                        <span class="pokemon-stat-name">Speed</span>
+                        <span class="pokemon-stat-value pokemon-stats-6">-</span>
+                      </div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="modal.js"></script>
+    </dialog>
+
+    <audio id="soundClick" src="audios/click.mp3" preload="auto"></audio>
+
+    <script src="poke.js"></script>
+</body>
+</html>

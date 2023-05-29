@@ -1,0 +1,108 @@
+dialog{
+    border: none;
+    border-radius: 10px;
+    border: 3px solid #333;
+    background-color: #E3E3E3;
+    box-shadow: -7px 8px 0px #808080, -10px 12px 0px #22181A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 80vh;
+    max-width: 700px;
+    text-align: right;
+}
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.336);
+}
+
+main{
+    display: grid;
+    place-items: center;
+}
+
+#tudo_dialog{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    width: 80%;
+}
+
+dialog > button{
+    position: relative;
+    margin: 10px;
+    color: white;
+    background-color: rgb(165, 19, 19);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 5vw;
+    max-width: 60px;
+    min-width: 50px;
+    border: 2px solid black;
+    box-shadow: -2px 2px 0px #5c1212, -3px 4px 0px #22181A;
+}
+
+dialog > button:active{
+    box-shadow: inset -3px 3px 0px #5c1212;
+    font-size: 11px;
+}
+
+.pokemon-img-2{
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #E3E3E3;
+    border: 2px solid #333;
+    box-shadow: -2px 3px 0px #808080, -3px 5px 0px #22181A;
+}
+
+#img_com_abilities{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#div_abilities{
+    display: grid;
+    text-align: left;
+    width: 50%;
+}
+#div_abilities h1{
+    border-bottom: 3px solid #6A6A6A;
+    width: 100%;
+}
+#div_abilities span{
+    border-bottom: 2px solid #C1C1C1;
+    width: 100%;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+#div_stats{
+    width: 95%;
+    display: grid;
+    text-align: left;
+    margin-top: 5vh;
+    font-weight: 500;
+}
+#div_stats h1{
+    border-bottom: 3px solid #6A6A6A;
+    width: 100%;
+}
+
+.pokemon-stat {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #C1C1C1;
+    width: 100%;
+    margin-top: 15px;
+
+}
+
+.pokemon-stat-value {
+    margin-left: 8px;
+}
+  

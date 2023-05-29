@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom, lightblue, white);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-image: url(imagens/bg.png);
+}
+
+div#tudo{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemon_gif{
+    position: absolute;
+    left: 35%;
+    bottom: 50%;
+    height: 18%;
+}
+
+.pokemon-data{
+    position: absolute;
+    color: #666;
+    font-weight: 600;
+    right: 27%;
+    top: 55%;
+    font-size: clamp(0.7rem, 2.8vw, 1.3rem);
+}
+
+.pokemon-name{
+    color: #3a444d;
+    text-transform: capitalize;
+}
+
+#formulario{
+    display: flex;
+    position: absolute;
+    width: 67%;
+    top: 65%;
+    left: 13.5%;
+    gap: 5px;
+}
+#input-search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    box-shadow: -2px 2px 0px #808080, -3px 4px 0px #22181A;
+}
+
+#botao-search{
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    background-color: white;
+    color: #3a444d;
+    border: 2px solid #333;
+    box-shadow: -2px 2px 0px #808080, -3px 4px 0px #22181A;
+}
+#botao-search:active{
+    box-shadow: inset -3px 3px 0px #808080;
+    font-size: clamp(0.45rem, 1.95vw, 0.95rem)
+}
+
+.botoes-div{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.botoes{
+    width: 50%;
+    padding: 4%;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-weight: 600;
+    background-color: #444;
+    color: white;
+    box-shadow: -2px 2px 0px #222, -3px 4px 0px black;
+}
+
+.botoes:active{
+    box-shadow: inset -3px 3px 0px #222;
+    font-size: clamp(0.45rem, 1.95vw, 0.95rem);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#vermais{
+    position: absolute;
+    bottom: 17.5%;
+    left: 30%;
+    width: 30%;
+    padding: 3%;
+    font-size: clamp(0.4rem, 1.8vw, 0.8rem);
+}
+
